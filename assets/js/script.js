@@ -18,3 +18,16 @@ console.log("------------");
 // stampo il mio oggetto
 console.log(student);
 console.log("------------");
+
+//stampo le proprietà dell'oggetto con ciclo for-in
+for(var chiave in student){
+  // stampo le chiavi dell'oggetto
+  console.log("le chiavi dell'oggetto student sono: " + chiave)
+  console.log("------------");
+  // stampo i valori dell'oggetto
+  console.log("i valori delle chiavi sono: " + student[chiave])
+  console.log("------------");
+  // stampo tutte le proprietà
+  console.log(chiave + " ha valore: " + student[chiave])
+  console.log("------------");
+}
