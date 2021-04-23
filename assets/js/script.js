@@ -31,3 +31,32 @@ for(var chiave in student){
   console.log(chiave + " ha valore: " + student[chiave])
   console.log("------------");
 }
+
+//creo un array di oggetti students
+var students = [
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    age: 17,
+  },
+  {
+    firstName: "Ronald",
+    lastName: "Wesley",
+    age: 18,
+  },
+  {
+    firstName: "William",
+    lastName: "Denbrough",
+    age: 13,
+  },
+  {
+    firstName: "Jackson",
+    lastName: "Teller",
+    age: 30,
+  }
+];
+
+// stampo l'array
+console.log(students);
+
+// Ciclo su tutti gli studenti e stampo per ognuno di essi, nome, cognome ed età
