@@ -75,17 +75,17 @@ students.push({
   age: 55,
 })
 
-// // 5 Do la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-// var newFirstName = prompt("Nome");
-// var newLastName = prompt("Cognome");
-// var newAge = parseInt(prompt("Età"));
+// 5 Do la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+var newFirstName = prompt("Nome");
+var newLastName = prompt("Cognome");
+var newAge = parseInt(prompt("Età"));
 
-// // pusho il tutto nell'array students
-// students.push({
-//   firstName: newFirstName,
-//   lastName: newLastName,
-//   age: newAge,
-// });
+// pusho il tutto nell'array students
+students.push({
+  firstName: newFirstName,
+  lastName: newLastName,
+  age: newAge,
+});
 
 console.log(students);
 
