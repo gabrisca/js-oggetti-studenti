@@ -1,10 +1,10 @@
-// Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
-// Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell’oggetto.
-// Creare un array di oggetti di studenti.
-// Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
-// Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+// 1 Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
+// 2 Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell’oggetto.
+// 3 Creare un array di oggetti di studenti.
+// 4 Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+// 5 Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
-// creo l'oggetto student e inserisco le chiavi con i relativi valori
+// 1 creo l'oggetto student e inserisco le chiavi con i relativi valori
 var student = {
   firstName: "Gabriele",
   lastName: "Scarparo",
@@ -19,7 +19,7 @@ console.log("------------");
 console.log(student);
 console.log("------------");
 
-//stampo le proprietà dell'oggetto con ciclo for-in
+// 2 stampo le proprietà dell'oggetto con ciclo for-in
 for(var chiave in student){
   // stampo le chiavi dell'oggetto
   console.log("la chiave dell'oggetto student è: " + chiave)
@@ -32,7 +32,7 @@ for(var chiave in student){
   console.log("------------");
 }
 
-//creo un array di oggetti students
+// 3 creo un array di oggetti students
 var students = [
   {
     firstName: "Harry",
@@ -59,7 +59,22 @@ var students = [
 // stampo l'array
 console.log(students);
 
-// Ciclo su tutti gli studenti e stampo per ognuno di essi, nome, cognome ed età
+// 5 Do la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+var newFirstName = prompt("Nome");
+var newLastName = prompt("Cognome");
+var newAge = parseInt(prompt("Età"));
+
+// pusho il tutto nell'array students
+students.push({
+  firstName: newFirstName,
+  lastName: newLastName,
+  age: newAge,
+})
+
+console.log(students);
+
+
+// 4 Ciclo su tutti gli studenti e stampo per ognuno di essi, nome, cognome ed età
 //stampo ogni singolo disco
 for(var idStudent of students){
   // vedo tutti gli studenti dell'array
