@@ -90,7 +90,6 @@ students.push({
 console.log(students);
 
 // 4 Ciclo su tutti gli studenti e stampo per ognuno di essi, nome, cognome ed età
-//stampo ogni singolo disco
 for (var idStudent of students) {
   // vedo tutti gli studenti dell'array
   console.log(idStudent);
@@ -105,12 +104,15 @@ for (var idStudent of students) {
   }
   console.log("-------------");
 
-  //salvo in una var le ul creata in html
+
+  // ALLENAMENTO //
+
+  //salvo in var le ul creatE in html
   var ulFirstName = document.getElementById("nome");
   var ulLastName = document.getElementById("cognome");
   var ulAge = document.getElementById("età");
 
-  // salvo in una var le stringhe html con gli elementi dell'array
+  // salvo in var le stringhe html con gli elementi dell'array
   var strHtmlFirstName =
     "<li><p>" + idStudent.firstName + '</p>';
   var strHtmlLastName =
@@ -122,5 +124,6 @@ for (var idStudent of students) {
   ulFirstName.innerHTML += strHtmlFirstName;
   ulLastName.innerHTML += strHtmlLastName;
   ulAge.innerHTML += strHtmlAge;
+  
   // giunto qui visualizzo sul browser il contenuto dell'array suddiviso in ul
 }
