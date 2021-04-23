@@ -22,13 +22,13 @@ console.log("------------");
 //stampo le proprietà dell'oggetto con ciclo for-in
 for(var chiave in student){
   // stampo le chiavi dell'oggetto
-  console.log("le chiavi dell'oggetto student sono: " + chiave)
-  console.log("------------");
+  console.log("la chiave dell'oggetto student è: " + chiave)
+  // console.log("------------");
   // stampo i valori dell'oggetto
-  console.log("i valori delle chiavi sono: " + student[chiave])
+  console.log("il valore della chiave è: " + student[chiave])
   console.log("------------");
   // stampo tutte le proprietà
-  console.log(chiave + " ha valore: " + student[chiave])
+  console.log("chiave: " + chiave + " - valore: " + student[chiave])
   console.log("------------");
 }
 
@@ -60,3 +60,13 @@ var students = [
 console.log(students);
 
 // Ciclo su tutti gli studenti e stampo per ognuno di essi, nome, cognome ed età
+//stampo ogni singolo disco
+for(var idStudent of students){
+  // vedo tutti gli studenti dell'array
+  console.log(idStudent);
+  // ciclo for-in e stampo tutti gli studenti con le realtive prorpietà
+  for(var chiave in idStudent){
+    console.log("chiave: " + chiave + " - valore: " + idStudent[chiave])
+  }
+  console.log("-------------")
+}
