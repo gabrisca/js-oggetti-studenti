@@ -3,3 +3,94 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: brown;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.student {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#input-text {
+  outline: 0;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(214, 228, 228, 0.24);
+}
+
+#input-text:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.flex ul{
+  list-style: none;
+  width: 200px;
+  text-align: center;
+}
+
+.flex ul li{
+  padding: 10px;
+}
+
+.flex ul li:nth-child(odd){
+  background-color: rgba(226, 213, 213, 0.39);
+}
+
+.flex ul li:nth-child(even){
+  background-color: rgba(183, 224, 211, 0.473);
+}
+
+.flex ul li:first-child{
+  background-color: rgb(255, 255, 255);
+}
+
+.flex ul h2{
+  margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES ******************/
+@media all and (max-width: 767px) {
+  #input-text {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #input-text {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #input-text {
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #input-text {
+    width: 35%;
+  }
+}
+
+/* /MEDIA QUERIES ******************/
