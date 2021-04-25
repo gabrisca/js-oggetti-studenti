@@ -23,7 +23,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-#input-text {
+#search {
   outline: 0;
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -70,27 +70,31 @@ h1 {
 
 /* MEDIA QUERIES ******************/
 @media all and (max-width: 767px) {
-  #input-text {
+  #search {
     width: 100%;
   }
 }
 
 @media all and (min-width: 768px) {
-  #input-text {
+  #search {
     width: 70%;
   }
 }
 
 @media all and (min-width: 992px) {
-  #input-text {
+  #search{
     width: 45%;
   }
 }
 
 @media all and (min-width: 1200px) {
-  #input-text {
+  #search {
     width: 35%;
   }
 }
 
 /* /MEDIA QUERIES ******************/
+
+.red{
+  background-color: red;
+}
